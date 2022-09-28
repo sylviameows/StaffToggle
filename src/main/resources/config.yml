@@ -1,7 +1,6 @@
 settings:
   adminGroup: admin
-  # in minutes
-  defaultTime: 10
+  defaultTime: 10m
 
 messages:
   error: "&cAn internal error occurred."
