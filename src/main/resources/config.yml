@@ -1,0 +1,13 @@
+settings:
+  adminGroup: admin
+  defaultTime: 10m
+
+messages:
+  error: "&cAn internal error occurred."
+  help:
+    - "&bStaffToggle help:"
+    - "&7- &f/staff on (time)"
+    - "&7- &f/staff off"
+  noPerm: "&cYou do not have permission to run this!"
+  notPlayer: "&cOnly players can run this command."
+

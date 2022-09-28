@@ -1,0 +1,14 @@
+name: StaffToggle
+version: 1.0.0
+main: uk.co.arcator.stafftoggle.StaffToggle
+api-version: 1.17
+depend:
+  - LuckPerms
+commands:
+  staff:
+    usage: /staff
+    description: toggle staff mode
+    permission: stafftoggle.toggle
+    aliases:
+      - st
+      - stafftoggle
