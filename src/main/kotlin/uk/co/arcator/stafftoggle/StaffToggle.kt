@@ -3,19 +3,15 @@ package uk.co.arcator.stafftoggle
 import org.bukkit.plugin.java.JavaPlugin
 
 class StaffToggle : JavaPlugin() {
-    companion object {
-        var instance: StaffToggle? = null
-        private set;
-    }
-
     override fun onEnable() {
         super.onEnable()
-        instance = this
 
+        config.addDefault("settings.adminGroup", "admin")
+        config.addDefault("settings.defaultTime", "10m")
         config.options().copyDefaults(true)
         saveConfig()
 
-        getCommand("staff")?.setExecutor(ToggleCommand())
+        getCommand("staff")?.setExecutor(ToggleCommand(this))
         getCommand("staff")?.tabCompleter = TabCompleter()
     }
 }
