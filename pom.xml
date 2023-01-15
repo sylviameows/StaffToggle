@@ -6,13 +6,13 @@
 
     <groupId>uk.co.arcator</groupId>
     <artifactId>staffToggle</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1.1</version>
     <packaging>jar</packaging>
 
     <name>staffToggle</name>
 
     <properties>
-        <kotlin.version>1.7.10</kotlin.version>
+        <kotlin.version>1.8.0</kotlin.version>
     </properties>
 
     <repositories>
@@ -27,6 +27,7 @@
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib</artifactId>
             <version>${kotlin.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
